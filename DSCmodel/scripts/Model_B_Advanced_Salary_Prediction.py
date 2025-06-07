@@ -11,11 +11,12 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 files = {
-    "Education": "Educational_position.json",
-    "Culture": "Culture_medium.json",
-    "Electronic": "Electronic_information.json",
-    "Mechanical_Finance": "Mechanical_Finance.json"
+    "Education": "data/Educational_position.json",
+    "Culture": "data/Culture_medium.json",
+    "Electronic": "data/Electronic_information.json",
+    "Mechanical_Finance": "data/Mechanical_Finance.json"
 }
+
 records = []
 for industry, file in files.items():
     with open(file, "r", encoding="utf-8") as f:
